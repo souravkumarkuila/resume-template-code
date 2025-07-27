@@ -1,0 +1,215 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+% Sections formatting
+\titleformat{\section}{
+ \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+ \item\small{
+   {#1 \vspace{-2pt}}
+ }
+}
+\newcommand{\classesList}[4]{
+   \item\small{
+       {#1 #2 #3 #4 \vspace{-2pt}}
+ }
+}
+\newcommand{\resumeSubheading}[4]{
+ \vspace{-2pt}\item
+   \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+     \textbf{#1} & \textbf{\small #2} \\
+     \textit{\small#3} & \textit{\small #4} \\
+   \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubSubheading}[2]{
+   \item
+   \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+     \textit{\small#1} & \textit{\small #2} \\
+   \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+   \item
+   \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+     \small#1 & \textbf{\small #2}\\
+   \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\begin{center}
+   {\Huge \scshape SOURAV KUILA} \\ \vspace{1pt}
+   Bangalore, India \\ \vspace{1pt}
+   \small \raisebox{-0.1\height}\faPhone\ +91 8825113878~ 
+   \href{http://souravkuila.in}{\raisebox{-0.2\height}\faGlobe\ \underline{souravkuila.in}}~\href{mailto:x@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{kuila.sourav1999@gmail.com}} ~
+   \href{https://www.linkedin.com/in/sourav-kumar-kuila-1aa543213/}{\raisebox{-0.2\height}\faLinkedin\ \underline{sourav-kuila}} ~
+   \href{https://github.com/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/username}
+   \vspace{-8pt}
+\end{center}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+ \resumeSubHeadingListStart
+   \resumeSubheading
+    {Capgemini, Bangalore}{July 2022 - Present}
+     {\textbf{Senior Software Engineer}}{Bangalore ,karnataka}
+     \resumeItemListStart
+     \resumeItem{Developed a  \textbf{Generative AI} solution leveraging \textbf{Azure AI} Search for efficient data retrieval and \textbf{GPT-4o} for advanced generation capabilities.}
+      \resumeItem{Built \textbf{RESTful APIs} using \textbf{Node.js} and user-friendly front-end development using \textbf{Angular}.}
+      \resumeItem{ \textbf{Full-stack development }using \textbf{Node.Js, Express.Js }\textbf{Sequelize ORM, PostgreSQL, Angular }featuring a \textbf{robust} and \textbf{scalable architecture} with a well-defined database schema and an interactive user interface.}
+        \resumeItem{Developed and executed unit and integration tests using \textbf{Jasmine and Karma}, achieving over
+       \textbf{80\%} code coverage and ensuring optimal performance and stability.}
+      \resumeItem{Designed and developed a dynamic web application using \textbf{Angular},incorporating the \textbf{Ionic Framework} and \textbf{Capacitor} to optimize mobile responsiveness and integrate native device features, delivering a seamless cross-platform experience}
+         \resumeItem{Worked on various \textbf{Use Cases} including designing and implementing secure \textbf{Role-based access control systems}, automating \textbf{Server Log Analysis} for enhanced monitoring, building efficient \textbf{File Transfer} solution and \textbf{Test-Driven Development}.}
+       \resumeItem{Contributed to the development of an \textbf{Accelerator tool} using \textbf{Python},automating the refactoring of small applications, resulting in significant reduction in \textbf{manual refactoring time}.}
+         \resumeItem{Contributed in enhancing the maintainability and performance of a \textbf{Node.Js} 
+       application by effectively \textbf{refactoring} the codebase, \textbf{reducing complexity}, and improving readability and efficiency.}
+   \resumeItemListEnd
+ \resumeSubHeadingListEnd
+\vspace{-16pt}
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.0in, label={}]
+   \small{\item{
+    \textbf{Languages}{: JavaScript, Typescript,SQL} \\
+    \textbf{Web Development Frameworks}{: Angular,Node JS, Express JS} \\
+    \textbf{Databases}{:PostgreSQL, MongoDB, MySQL } \\
+    \textbf{DevOps and Automation}{: Terraform, Github Actions, Docker} \\
+    \textbf{Cloud Services}{: Azure} \\
+    \textbf{Tools}{: Git, Postman} \\
+   }}
+\end{itemize}
+\vspace{-16pt}
+%-----------PROJECTS-----------
+\section{Projects}
+   \vspace{-5pt}
+   \resumeSubHeadingListStart
+     \resumeProjectHeading
+         {\textbf{E-library $|$ \emph{Angular, Node.Js}}}{Aug 2023}
+         \resumeItemListStart
+           \resumeItem{Developed a interactive and user-friendly digital library experience where users can explore subscribed books and read. 
+           Github link - \href{}{https://github.com/souravkumarkuila/E-library}}
+         \resumeItemListEnd
+         \vspace{-13pt}
+         \resumeProjectHeading
+         {\textbf{Amusement Park Booking System} $|$ \emph{\textbf{Angular}, \textbf{Node.Js}}}{Oct 2024}
+         \resumeItemListStart
+           \resumeItem{A Streamlined Ticket Management and Booking Platform where users can easily book tickets based on ticket types using Angular and Node.Js.
+           Link - \href{}{https://github.com/souravkumarkuila/Amusement-park-backend}}
+         \resumeItemListEnd
+         \vspace{-13pt}
+         \resumeProjectHeading
+         {\textbf{E-Commerce} $|$ \emph{\textbf{Angular},\textbf{JSON Server}}}
+         {Sep 2023}
+         \resumeItemListStart
+           \resumeItem{Developed a responsive e-commerce app  featuring product listing,search,cart and checkout.
+           Github Link - \href{}{https://github.com/souravkumarkuila/E-Commerce}}
+         \resumeItemListEnd
+           \vspace{-13pt}
+         \resumeProjectHeading
+          {\textbf{Hotel management system} $|$ \emph{\textbf{Angular, Java, Microservices }}} {May 2022}
+         \resumeItemListStart
+           \resumeItem{A hotel management system featuring room booking,pricing categories,guest registration built using microservice architecture.
+           Github Link - \href{}{https://github.com/souravkumarkuila/Hotel-management-system-backend}}
+         \resumeItemListEnd
+   \resumeSubHeadingListEnd
+\vspace{-15pt}
+  \resumeSubHeadingListEnd
+\vspace{-15pt}
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+   \resumeSubheading
+      {Bachelor of Technology- Biotechnology}{Chennai, Tamil Nadu}
+    {SRM Institute of Science and Technology }
+     {June 2018 -- May 2022}
+       
+     {CGPA : 8.59/10}
+   \resumeSubheading
+     {Higher Secondary Education}{June  2015 -- March 2017}
+     {Vikash Residential School}{Bhubaneswar, Odisha}
+     
+    {Percentage : {80.6\%}
+ \resumeSubHeadingListEnd
+%----------- CERTIFICATIONS -----------%
+
+\section{Certifications}
+
+\begin{itemize}[leftmargin=0.15in]
+
+  \item \textbf{AWS Certified Developer - Associate.} \href{https://github.com/souravkumarkuila/certificates/blob/main/AWS%20Certified%20Developer%20-%20Associate%20certificate.pdf}{link} \hfill \textit{Sep 2024}
+
+  \item \textbf{AWS Certified Cloud Practitioner.} \href{https://github.com/souravkumarkuila/certificates/blob/main/AWS%20certified.pdf}{link} \hfill \textit{Oct 2022}
+
+  \item \textbf{Google Cloud Digital Leader.} \href{https://github.com/souravkumarkuila/certificates/blob/main/Google%20cloud%20certified.pdf}{link} \hfill \textit{Nov 2022}
+
+  \item \textbf{Microsoft Certified: Azure Administrator Associate.} \href{https://github.com/souravkumarkuila/certificates/blob/main/azure%20administrator%20associate.jpg}{link} \hfill \textit{May 2025}
+
+  \item \textbf{Microsoft Certified: Azure Fundamentals.} \href{https://learn.microsoft.com/en-us/users/kuilasourav-4711/credentials/99e44952fe6b54a1}{link} \hfill \textit{Sep 2023}
+
+  \item \textbf{Generative AI Fundamentals.} \href{https://www.credly.com/badges/620c8a82-7d82-4711-baa2-c70f946de5a5}{link} \hfill \textit{Jun 2023}
+
+  \item \textbf{Agile Software Development.} \href{https://github.com/souravkumarkuila/certificates/blob/main/46257370_Agile%20Software%20Development.pdf}{link} \hfill \textit{Oct 2022}
+
+\end{itemize}
+ 
+    \end{document}
+    
