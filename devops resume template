@@ -1,0 +1,128 @@
+\documentclass[a4paper,10pt]{article}
+
+% Packages
+\usepackage{latexsym}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{enumitem}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=black
+}
+\usepackage{fontawesome}
+
+% Page style
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{2pt}\item
+    \textbf{#1} \hfill #2 \\
+    \textit{\small#3} \hfill \textit{\small #4}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}}
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%--------- RESUME STARTS HERE ---------%
+\begin{document}
+
+%---------- HEADER ----------
+\begin{center}
+    {\Huge \bfseries Sourav Kumar Kuila} \\ \vspace{4pt}
+    \small
+    \faPhone~+91 8825113878 ~
+    \href{mailto:kuila.sourav2001@gmail.com}{\faEnvelope~kuila.sourav1999@gmail.com} ~
+    \href{http://souravkuila.in}{\faGlobe~souravkuila.in} ~
+    \href{https://www.linkedin.com/in/sourav-kumar-kuila-1aa543213/}{\faLinkedin~LinkedIn} ~
+    \href{https://github.com/souravkumarkuila}{\faGithub~GitHub}
+\end{center}
+\vspace{-8pt}
+
+%----------- SUMMARY -----------%
+\section*{Summary}
+\noindent
+\textbf{Senior DevOps Engineer} with \textbf{3 years} of strong background in \textbf{Azure DevOps}.Experienced in designing and managing scalable cloud infrastructures using \textbf{Terraform} and streamlining deployments through \textbf{CI/CD pipelines}. 
+Skilled in \textbf{Docker} for containerization and \textbf{Kubernetes} for orchestrating and managing containerized applications.
+
+
+
+%----------- TECHNICAL SKILLS -----------%
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in]
+\item \textbf{Cloud Services:} Azure
+   \item \textbf{DevOps and Automation:} Terraform, GitHub Actions, Docker, Kubernetes
+     \item \textbf{Tools \& CLI:} Azure CLI, Azure Storage, Git, Azure Pipelines, ADO
+
+  \item \textbf{Monitoring \& Logging:} Prometheus, Grafana
+    \item \textbf{Security \& Compliance:} TFSec, TFLint
+\end{itemize}
+
+%----------- EXPERIENCE -----------%
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Capgemini Technology Services}{July 2022 -- Present}
+{Senior DevOps Engineer}{Bangalore, India}
+\resumeItemListStart
+  \resumeItem{Developed and optimized \textbf{Infrastructure as Code (IaC)} using \textbf{Terraform} to automate Azure resource provisioning, improving deployment efficiency and reducing manual efforts by 80\%.}
+  \resumeItem{Built reusable and parameterized \textbf{Terraform modules} for managing \textbf{Azure storage, compute, and networking}, ensuring efficient infrastructure reusability and maintainability.}
+\resumeItem{Designed and managed scalable \textbf{CI/CD pipelines} using \textbf{YAML} in \textbf{Azure DevOps}, enabling automated builds, testing, and deployments, which increased release frequency and improved deployment reliability.}
+\resumeItem{Provisioned and managed secure, scalable \textbf{Azure resources} including \textbf{VM, Load Balancers, VNet, NSG, Key Vaults}, and \textbf{Storage Accounts}, ensuring high availability and cost-efficient cloud infrastructure.}
+\resumeItem{Leveraged \textbf{Docker} to build and manage containerized applications, reducing environment-related issues and enabling faster, more reliable deployments.}
+   \resumeItem{Managed and optimized \textbf{Azure Kubernetes Service (AKS)} clusters to run resilient, scalable containerized applications in production ensuring high availability and seamless deployments.}
+  \resumeItem{Implemented real-time \textbf{monitoring and alerting} using \textbf{Prometheus} and \textbf{Grafana} enhancing system reliability and reducing downtime.}
+  % \resumeItem{Worked closely with development and QA teams to improve build-test-release cycles and reduce infrastructure-related incidents.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%----------- CERTIFICATIONS -----------%
+\section{Certifications}
+\begin{itemize}[leftmargin=0.15in]
+  \item \textbf{Microsoft Certified: Azure Administrator Associate} \hfill \textit{May 2025}
+  \item \textbf{Microsoft Certified: Azure Fundamentals} \hfill \textit{Sep 2023}
+   \item \textbf{AWS Certified Developer – Associate} \hfill \textit{Sep 2024}
+  \item \textbf{AWS Certified Cloud Practitioner} \hfill \textit{Oct 2022}
+    \item \textbf{Google Cloud Digital Leader} \hfill \textit{Nov 2022}
+  \item \textbf{Generative AI Fundamentals } \hfill \textit{Jun 2023}
+  \item \textbf{Agile Software Development – Coursera} \hfill \textit{Oct 2022}
+\end{itemize}
+
+%----------- EDUCATION -----------%
+\section{Education}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Bachelor of Technology- Biotechnology} {Chennai, Tamil Nadu}
+{SRM Institute of Science and Technology} {June 2018 -- May 2022}
+
+{CGPA: 8.59/10}
+\resumeSubheading
+{Higher Secondary Education- Science} {Bhubaneswar, Odisha}
+{Vikash Residential School} {June 2015 -- March 2017}
+
+{percentage : {80.6\%}
+
+\resumeSubHeadingListEnd
+
+\end{document}
