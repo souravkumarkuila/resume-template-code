@@ -1,0 +1,126 @@
+\documentclass[a4paper,10pt]{article}
+
+% Packages
+\usepackage{latexsym}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{enumitem}
+\usepackage[margin=0.50in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=black
+}
+\usepackage{fontawesome}
+
+% Page style
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{2pt}\item
+    \textbf{#1} \hfill #2 \\
+    \textit{\small#3} \hfill \textit{\small #4}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}}
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%--------- RESUME STARTS HERE ---------%
+\begin{document}
+
+%---------- HEADER ----------
+\begin{center}
+    {\Huge \bfseries Sourav Kuila} \\ \vspace{4pt}
+    \small
+    \faPhone~+91 8002233878 ~
+    \href{mailto:kuila.sourav2001@gmail.com}{\faEnvelope~kuila.sourav2001@gmail.com} ~
+    \href{http://souravkuila.in}{\faGlobe~souravkuila.in} ~
+    \href{https://www.linkedin.com/in/sourav-kumar-kuila-1aa543213/}{\faLinkedin~LinkedIn} ~
+    \href{https://github.com/souravkumarkuila}{\faGithub~GitHub}
+\end{center}
+\vspace{-8pt}
+%----------- SUMMARY -----------%
+\section*{Summary}
+\textbf{Senior DevOps Engineer} with 3 years of experience in building and managing cloud infrastructure on \textbf{Microsoft Azure}. Experienced in automating deployments and infrastructure using \textbf{Terraform}. skilled in containerization with \textbf{Docker} and orchestration with \textbf{Kubernetes}. Strong background in setting up and optimizing \textbf{CI/CD pipelines} to enhance software delivery speed and reliability. Experienced in implementing DevOps practices aligned with cloud security.
+
+
+%----------- TECHNICAL SKILLS -----------%
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in]
+\item \textbf{Cloud Services:} Azure
+   \item \textbf{DevOps and Automation:} Terraform, Docker, Kubernetes, GitHub Actions, shell scripting
+   \item \textbf{Monitoring:} Prometheus, Grafana
+    \item \textbf{Languages}{: JavaScript, Typescript,SQL}
+    \item \textbf{Web Development Frameworks}{: Angular, Node JS, Express JS}
+    \item \textbf{Databases}{: PostgreSQL }
+\end{itemize}
+
+%----------- EXPERIENCE -----------%
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Capgemini Technology Services}{July 2022 -- Present}
+{Senior DevOps Engineer}{Bangalore, India}
+\resumeItemListStart
+ \resumeItem{Implemented \textbf{Terraform} scripts to automate provisioning of resources across all \textbf{Azure environments} using \textbf{Azure Pipelines} resulting in a 30\% reduction in deployment time and improved deployment consistency.}
+  % \resumeItem{Built and managed scalable \textbf{CI/CD pipelines} using \textbf{YAML} for seamless integration and delivery, improving deployment frequency and stability.}
+  \resumeItem{Managed infrastructure across \textbf{Azure resources} using \textbf{Terraform}, optimizing resource allocation while ensuring security and compliance.}
+  \resumeItem{Designed and deployed a \textbf{Generative AI} solution utilizing \textbf{Azure OpenAI} and \textbf{Azure AI Search} for efficient data retrieval, while automating deployments and ensuring a \textbf{scalable} and \textbf{secure} cloud infrastructure.}
+  \resumeItem{Developed an end-to-end \textbf{CI/CD pipeline} from scratch for a \textbf{Python} project, with deployments automated using \textbf{Azure Pipelines} to ensure faster and reliable delivery.}
+  % \resumeItem{Developed reusable and parameterized \textbf{Terraform modules} to efficiently provision and manage Azure \textbf{storage, compute, and networking} resources, enabling scalable, consistent, and maintainable infrastructure-as-code practices.}
+  \resumeItem{Deployed and managed \textbf{Docker containerized} applications in \textbf{Kubernetes clusters} using \textbf{Kubectl} and YAML manifests for automated deployments, ensuring \textbf{high availability}, \textbf{scalability}, and \textbf{optimized performance} in production environments.}
+  \resumeItem{Deployed and managed containerized applications in \textbf{Kubernetes clusters} using \textbf{Kubectl and YAML manifests} for automated deployments. Configured and maintained production-grade environments with \textbf{high availability}, \textbf{scalability}, and optimized performance.}
+ % \resumeItem{Defined and managed core \textbf{Kubernetes} components including \textbf{Pods, Deployments, Services, Persistent Volumes (PVs)}, and \textbf{Persistent Volume Claims (PVCs)} to streamline and automate the application lifecycle in production-grade environments.}
+ \resumeItem{Automated build, test and deployment workflows for \textbf{Azure applications} using \textbf{GitHub Actions}, enabling rapid and reliable releases while reducing manual intervention and minimizing deployment errors.}
+  \resumeItem{Implemented real-time \textbf{monitoring and alerting} using \textbf{Prometheus} and \textbf{Grafana}, enhancing system reliability and reducing downtime.}
+  \resumeItem{Worked closely with development and QA teams to improve \textbf{build}-test-\textbf{release} cycles and reduce infrastructure-related incidents.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%----------- CERTIFICATIONS -----------%
+\section{Certifications}
+\begin{itemize}[leftmargin=0.15in]
+\item \textbf{Microsoft Certified: Azure Administrator Associate.} \href{https://github.com/souravkumarkuila/certificates/blob/main/azure%20administrator%20associate.jpg}{link} \hfill \textit{May 2025}
+\item \textbf{Microsoft Certified: Azure Fundamentals.} \href{https://learn.microsoft.com/en-us/users/kuilasourav-4711/credentials/99e44952fe6b54a1}{link} \hfill \textit{Sep 2023}
+  % \item \textbf{AWS Certified Developer - Associate.} \href{https://github.com/souravkumarkuila/certificates/blob/main/AWS%20Certified%20Developer%20-%20Associate%20certificate.pdf}{link} \hfill \textit{Sep 2024}
+  \item \textbf{Microsoft Certified: Azure Administrator Associate.} \href{https://github.com/souravkumarkuila/certificates/blob/main/azure%20administrator%20associate.jpg}{link} \hfill \textit{May 2025}
+  \item \textbf{AWS Certified Cloud Practitioner.} \href{https://github.com/souravkumarkuila/certificates/blob/main/AWS%20certified.pdf}{link} \hfill \textit{Oct 2022}
+\end{itemize}
+
+%----------- EDUCATION -----------%
+\section{Education}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Bachelor of Technology- Biotechnology} {Chennai, Tamil Nadu}
+{SRM Institute of Science and Technology} {June 2018 -- May 2022}
+
+{CGPA: 8.59/10}
+\resumeSubheading
+{Higher Secondary Education- Science} {Bhubaneswar, Odisha}
+{Vikash Residential School} {June 2015 -- March 2017}
+
+{percentage : {80.6\%}
+
+\resumeSubHeadingListEnd
+
+\end{document}
+this is my complete code i want education part touch the end of the page it should adjust properly so that i can put some more content in experience section
